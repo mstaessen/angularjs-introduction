@@ -24,6 +24,13 @@ body {
   background: #002b36;
   background-color: #002b36; }
 
+@font-face {
+  font-family: 'ionicons';
+  src: url("../../lib/font/ionicons.eot");
+  src: url("../../lib/font/ionicons.eot?#iefix") format("embedded-opentype"), url("../../lib/font/ionicons.ttf") format("truetype"), url("../../lib/font/ionicons.woff") format("woff"), url("../../lib/font/ionicons.svg#ionicons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .reveal {
   font-family: "Lato", sans-serif;
   font-size: 36px;
@@ -95,6 +102,290 @@ body {
   background: rgba(255, 255, 255, 0.2);
   border-color: #268bd2;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+/*********************************************
+ * UTILITY CLASSES
+ *********************************************/
+.reveal section .large {
+  font-size: 54px; }
+
+.reveal section .semi-spacy {
+  margin-top: 18px;
+  margin-bottom: 18px; }
+
+.reveal section .spacy {
+  margin-top: 54px;
+  margin-bottom: 54px; }
+
+.reveal section .extra-spacy {
+  margin-top: 72px;
+  margin-bottom: 72px; }
+
+.reveal section .no-border {
+  border: none; }
+
+.reveal section .no-background {
+  background: none; }
+
+.reveal section .text-left {
+  text-align: left; }
+
+.reveal section .text-center {
+  text-align: center; }
+
+.reveal section .text-right {
+  text-align: right; }
+
+.reveal section .text-jusify {
+  text-align: justify; }
+
+.reveal section .img-circle {
+  border-radius: 50%; }
+
+.reveal section ul.icon-list {
+  list-style: none; }
+
+.reveal section li.pro {
+  color: #5CB85C; }
+
+.reveal section li.contra {
+  color: #D9534F; }
+
+.reveal section ul.icon-list li.pro:before,
+.reveal section ul.icon-list li.contra:before {
+  margin: 0 18px -36px;
+  font-family: 'ionicons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.reveal section ul.icon-list li.pro:before {
+  content: "\e702"; }
+
+.reveal section ul.icon-list li.contra:before {
+  content: "\e703"; }
+
+.reveal section .form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 36px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+
+.reveal section .form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+
+.reveal section iframe {
+  width: 30em;
+  height: 16em;
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid #93a1a1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear; }
+
+/*********************************************
+ * GRID
+ *********************************************/
+.row {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.row:before,
+.row:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.row:after {
+  clear: both; }
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left; }
+
+.col-12 {
+  width: 100%; }
+
+.col-11 {
+  width: 91.66666666666666%; }
+
+.col-10 {
+  width: 83.33333333333334%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-8 {
+  width: 66.66666666666666%; }
+
+.col-7 {
+  width: 58.333333333333336%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-5 {
+  width: 41.66666666666667%; }
+
+.col-4 {
+  width: 33.33333333333333%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-2 {
+  width: 16.666666666666664%; }
+
+.col-1 {
+  width: 8.333333333333332%; }
+
+.col-pull-12 {
+  right: 100%; }
+
+.col-pull-11 {
+  right: 91.66666666666666%; }
+
+.col-pull-10 {
+  right: 83.33333333333334%; }
+
+.col-pull-9 {
+  right: 75%; }
+
+.col-pull-8 {
+  right: 66.66666666666666%; }
+
+.col-pull-7 {
+  right: 58.333333333333336%; }
+
+.col-pull-6 {
+  right: 50%; }
+
+.col-pull-5 {
+  right: 41.66666666666667%; }
+
+.col-pull-4 {
+  right: 33.33333333333333%; }
+
+.col-pull-3 {
+  right: 25%; }
+
+.col-pull-2 {
+  right: 16.666666666666664%; }
+
+.col-pull-1 {
+  right: 8.333333333333332%; }
+
+.col-push-12 {
+  left: 100%; }
+
+.col-push-11 {
+  left: 91.66666666666666%; }
+
+.col-push-10 {
+  left: 83.33333333333334%; }
+
+.col-push-9 {
+  left: 75%; }
+
+.col-push-8 {
+  left: 66.66666666666666%; }
+
+.col-push-7 {
+  left: 58.333333333333336%; }
+
+.col-push-6 {
+  left: 50%; }
+
+.col-push-5 {
+  left: 41.66666666666667%; }
+
+.col-push-4 {
+  left: 33.33333333333333%; }
+
+.col-push-3 {
+  left: 25%; }
+
+.col-push-2 {
+  left: 16.666666666666664%; }
+
+.col-push-1 {
+  left: 8.333333333333332%; }
+
+.col-offset-12 {
+  margin-left: 100%; }
+
+.col-offset-11 {
+  margin-left: 91.66666666666666%; }
+
+.col-offset-10 {
+  margin-left: 83.33333333333334%; }
+
+.col-offset-9 {
+  margin-left: 75%; }
+
+.col-offset-8 {
+  margin-left: 66.66666666666666%; }
+
+.col-offset-7 {
+  margin-left: 58.333333333333336%; }
+
+.col-offset-6 {
+  margin-left: 50%; }
+
+.col-offset-5 {
+  margin-left: 41.66666666666667%; }
+
+.col-offset-4 {
+  margin-left: 33.33333333333333%; }
+
+.col-offset-3 {
+  margin-left: 25%; }
+
+.col-offset-2 {
+  margin-left: 16.666666666666664%; }
+
+.col-offset-1 {
+  margin-left: 8.333333333333332%; }
 
 /*********************************************
  * NAVIGATION CONTROLS
